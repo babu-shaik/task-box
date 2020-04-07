@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SelectComponent } from './select/select.component';
 import { MatFormFieldModule, MatInputModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MatFormFieldModule, MatInputModule} from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
     
   ],
   providers: [],

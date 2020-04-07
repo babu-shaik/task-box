@@ -9,3 +9,15 @@
     <option value="audi">Fourty</option>
   </select>
 </mat-form-field>
+
+<h4>Age Selector</h4>
+  <mat-form-field appearance="outline">
+    <mat-label>Age</mat-label>
+    <select matNativeControl [(ngModel)]="selectedAge" name="age">
+      <option value="" selected></option>
+      <option *ngFor="let age of age" [value]="age.value">
+        {{age.viewValue}}
+      </option>
+    </select>
+  </mat-form-field>
+  <p> Selected Age: {{selectedAge}} </p>
